@@ -16,17 +16,26 @@
     };
 };
 
-// ペリフェラル（split経由）のリスナーを有効化
 &peripheral_listener {
     status = "okay";
 };
 
-// セントラルのリスナーを有効化し、deviceを紐付け
+&zip_temp_layer {
+    excluded-positions = <
+        17 // J
+        18 // K
+        19 // L
+    >;
+
+    require-prior-idle-ms = <800>;
+};
+
 &central_listener {
     status = "okay";
     device = <&trackball_central>;
     input-processors = 
-        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+        <&zip_temp_layer 1 10000>;
 
     scroller {
         layers = <2>;
