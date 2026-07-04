@@ -31,14 +31,14 @@ layers:
   - ','
   - $$mdi:arrow-up-bold$$
   - .
-  - $$mdi:keyboard-esc$$
-  - LANGUAGE 2
-  - LANGUAGE 1
+  - {t: '$$mdi:keyboard-esc$$', h: Device Layer}
+  - ;
+  - ''''
   - $$mdi:pan-up$$
-  - {t: '$$mdi:keyboard-space$$', h: NumSym Layer}
+  - {t: '$$mdi:keyboard-space$$', h: Symbol Layer}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', h: NumSym Layer}
+  - {t: '$$mdi:keyboard-return$$', h: Number Layer}
   - $$mdi:pan-up$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -98,17 +98,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NumSym Layer:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  Symbol Layer:
   - '!'
   - '@'
   - '#'
@@ -119,33 +109,139 @@ layers:
   - '*'
   - (
   - )
-  - ;
-  - ':'
-  - ''''
-  - '"'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '='
   - +
-  - \
-  - '|'
+  - ''
   - '['
   - ']'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - QUESTION
+  - '|'
+  - ''
+  - '{'
+  - '}'
   - '`'
-  - '~'
-  - /
+  - ''
+  - ''
   - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - LANGUAGE 2
+  - LANGUAGE 1
+  - {t: ▽, type: trans}
+  - ''
+  - /
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Number Layer:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Device Layer:
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - QUESTION
-  - '{'
-  - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Device Layer: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', '', '', '', '', '']
+  - ''
+  - ''
+  - BT CLR ALL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
